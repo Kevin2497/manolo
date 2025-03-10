@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis Prácticas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        h1 {
+            color: #333;
+        }
+        .practicas {
+            list-style-type: none;
+            padding: 0;
+        }
+        .practica {
+            background: #e3e3e3;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            transition: transform 0.3s ease, background-color 0.3s ease; /* Animación para transformación y color */
+        }
+        .practica:hover {
+            transform: scale(1.05); /* Efecto de agrandamiento */
+            background-color: #007BFF; /* Cambio de color */
+        }
+        .practica h2 {
+            margin: 0;
+            color: #007BFF;
+            transition: color 0.3s ease; /* Animación para el color del texto */
+        }
+        .practica:hover h2 {
+            color: white; /* Cambio de color del texto al pasar el mouse */
+        }
+        .practica p {
+            margin: 5px 0;
+        }
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 15px;
+            background: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: transform 0.3s ease, background 0.3s ease; /* Animación para el botón */
+        }
+        .btn:hover {
+            background: #0056b3;
+            transform: scale(1.1); /* Efecto de agrandamiento */
+        }
+        .practica a {
+            text-decoration: none;
+            color: inherit;
+            transition: transform 0.3s ease, color 0.3s ease; /* Animación para los enlaces */
+        }
+        .practica a:hover {
+            transform: scale(1.1); /* Efecto de agrandamiento */
+            color: #0056b3; /* Cambio de color del enlace */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Mis Prácticas</h1>
+        
+        <ul class="practicas">
+            <li class="practica">
+                <h2>Práctica 1</h2>
+                <a href="./PAGINASMANUEL/Practica1/Practica.html">Practica 1</a> 
+            </li>
+            <li class="practica">
+                <h2>Práctica 2</h2>
+                <a href="./PAGINASMANUEL/Practica2/index.html">Practica 2</a> 
+            </li>
+            <li class="practica">
+                <h2>Práctica 3</h2>
+                <a href="./PAGINASMANUEL/Practica3/index2.html">Practica 3</a> 
+            </li>
+            <li class="practica">
+                <h2>Práctica 4</h2>
+                <a href="./PAGINASMANUEL/Practica4/indexalemania.html">Practica 4</a> 
+            </li>
+            <li class="practica">
+                <h2>Práctica 5</h2>
+                <a href="./PAGINASMANUEL/Practica5/index.html">Practica 5</a> 
+            </li>
+        </ul>
+        
+        <a href="index.html" class="btn">Volver a la página principal</a>
+    </div>
+</body>
+</html>

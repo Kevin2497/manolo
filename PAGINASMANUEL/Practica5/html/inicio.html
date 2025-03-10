@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía Turística de Orizaba</title>
+    <style>
+        /* General styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #2c3e50;
+        }
+
+        /* Navbar */
+        nav {
+            text-align: center;
+            background-color: #2980B9;
+            padding: 15px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            margin: 0 20px;
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: bold;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #f1c40f;
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            background-color: #16a085;
+            color: white;
+            padding: 40px 20px;
+            border-bottom: 5px solid #1abc9c;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+
+        header p {
+            margin: 10px 0 0;
+            font-size: 1.2em;
+        }
+
+        /* Main section */
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+
+        main h2 {
+            color: #e74c3c;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .places {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 20px auto;
+            max-width: 1200px;
+        }
+
+        .place {
+            background-color: #ecf0f1;
+            border: 1px solid #bdc3c7;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .place:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .place h3 {
+            color: #16a085;
+            margin-bottom: 10px;
+        }
+
+        .place p {
+            color: #7f8c8d;
+            font-size: 0.9em;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #34495e;
+            color: #ecf0f1;
+            margin-top: 40px;
+        }
+
+        footer a {
+            color: #f1c40f;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <a href="../index.html">Index</a> 
+        <a href="./inicio.html">Inicio</a>
+        <a href="./blog.html">Blog</a>
+        <a href="./lugares.html">Lugares</a>
+        <a href="./mapa.html">Mapa</a>
+        <a href="./entrada.html">Entrada</a>
+        <a href="./comentarios.html">Comentarios</a>
+        <a href="./contacto.html">Contacto</a>
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <h1>Bienvenidos a la Guía Turística de Orizaba, Veracruz</h1>
+        <p>Explora lo mejor de este Pueblo Mágico y sus lugares imperdibles.</p>
+    </header>
+
+    <!-- Main content -->
+    <main>
+        <h2>Descubre los Principales Destinos Turísticos</h2>
+        <div class="places">
+            <div class="place">
+                <h3>Teleférico</h3>
+                <p>Admira las vistas impresionantes del Pico de Orizaba y el valle desde las alturas.</p>
+            </div>
+            <div class="place">
+                <h3>Poliforum</h3>
+                <p>Un espacio cultural y deportivo donde se llevan a cabo eventos destacados de la región.</p>
+            </div>
+            <div class="place">
+                <h3>Laguna</h3>
+                <p>Un lugar ideal para relajarse y disfrutar de un paisaje natural encantador.</p>
+            </div>
+            <div class="place">
+                <h3>Tobogán</h3>
+                <p>Diviértete con la familia en este emocionante atractivo lleno de adrenalina.</p>
+            </div>
+            <div class="place">
+                <h3>Casa Vegas</h3>
+                <p>Conoce esta histórica construcción que es un símbolo de la riqueza cultural de Orizaba.</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Guía Turística de Orizaba | </p>
+    </footer>
+</body>
+</html>

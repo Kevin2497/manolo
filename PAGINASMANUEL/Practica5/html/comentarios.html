@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrada del Blog - Explorando el Teleférico de Orizaba</title>
+    <style>
+        nav {
+            text-align: center;
+            margin-top: 20px;
+            background-color: #2980B9;
+            padding: 20px;
+        }
+        
+        nav a {
+            margin: 0 30px;
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+        #comentarios {
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        .comentario {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .bueno {
+            background-color: #d4edda;
+            border-left: 5px solid #28a745;
+        }
+
+        .malo {
+            background-color: #f8d7da;
+            border-left: 5px solid #dc3545;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="../index.html">Index</a> 
+        <a href="./inicio.html">Inicio</a>
+        <a href="./blog.html">Blog</a>
+        <a href="./lugares.html">Lugares</a>
+        <a href="./mapa.html">Mapa</a>
+        <a href="./entrada.html">Entrada</a>
+        <a href="./comentarios.html">Comentarios</a>
+        <a href="./contacto.html">Contacto</a>
+    </nav>
+
+    <header>
+        <h1>Explorando el Teleférico de Orizaba</h1>
+    </header>
+    <main>
+        <article>
+            <h2>Una Experiencia Inolvidable</h2>
+            <p>El Teleférico de Orizaba es una de las atracciones más impresionantes de la ciudad, permitiendo a los visitantes disfrutar de una vista panorámica espectacular.</p>
+            
+            <h3>Detalles del Recorrido</h3>
+            <p>El teleférico conecta el centro de la ciudad con el Cerro del Borrego, ofreciendo un viaje emocionante a una altura de más de 300 metros.</p>
+            
+            <h3>Consejos para tu Visita</h3>
+            <ul>
+                <li>Llega temprano para evitar filas largas.</li>
+                <li>No olvides llevar tu cámara para capturar la vista.</li>
+                <li>Viste ropa cómoda y lleva protector solar.</li>
+            </ul>
+            
+            <h3>Información General</h3>
+            <ul>
+                <li><strong>Ubicación:</strong> Calle Sur 4, Centro, Orizaba</li>
+                <li><strong>Horario:</strong> 10:00 AM - 8:00 PM</li>
+                <li><strong>Precio:</strong> $50 MXN por persona</li>
+            </ul>
+        </article>
+    </main>
+    
+    <section id="comentarios">
+        <h2>Deja tu Comentario</h2>
+        <form id="formComentario">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" required>
+            <br>
+            <label for="tipo">Tipo de comentario:</label>
+            <select id="tipo">
+                <option value="bueno">Bueno</option>
+                <option value="malo">Malo</option>
+            </select>
+            <br>
+            <label for="mensaje">Comentario:</label>
+            <textarea id="mensaje" required></textarea>
+            <br>
+            <button type="submit">Enviar</button>
+        </form>
+        
+        <h3>Comentarios</h3>
+        <div id="listaComentarios"></div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Guía Turística de Orizaba</p>
+    </footer>
+    
+    <script>
+        document.getElementById("formComentario").addEventListener("submit", function(event) {
+            event.preventDefault();
+            
+            let nombre = document.getElementById("nombre").value;
+            let tipo = document.getElementById("tipo").value;
+            let mensaje = document.getElementById("mensaje").value;
+            
+            let comentario = document.createElement("div");
+            comentario.classList.add("comentario", tipo);
+            comentario.innerHTML = `<strong>${nombre}:</strong> <p>${mensaje}</p>`;
+            
+            document.getElementById("listaComentarios").appendChild(comentario);
+            
+            document.getElementById("formComentario").reset();
+        });
+    </script>
+</body>
+</html>
